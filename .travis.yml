@@ -21,9 +21,10 @@ deploy:
   provider: releases
   api_key:
     secure: MO5cFUddaIZI0XQa+7JNOWDRC2UcJ2cYgl9yCJ0/Ym2i6XmKU/sYslWrglWxi45VUQT9JLZu8yxzE3MlMLxgjplNIaoXKBG/IKaBqyxdkXUWubO1ffIWJxROsMLkSjsIZ19cuiBwldgMzjAwshwdhQvu4MVcC0kMKajqnngDJhcFAblMQvR3sfDJcYLqT5+q1ykXPCz/MHNPoVk4N4uoiq1OjGgPGvdKEuwd1gBc+1J+pFfu+0IbZ0CT98AjVHo2KCfJtNNQS6ILk/YlYckXVeiWoWVX5mTPGsLWoFOB226tRceoQkI6AvSSuY1KQb6YrZFugbzcFGumdGd6gk/SlGi8kYeY/LJwmRkokKsYfitZKVisCgdlajUbKJFc/DHcdrstleilKFax3Bh5B2BcocnWxIY/kTYMbYnqMqnF8QRR96HQLV4gCvfW3q4w0Bw7aDbshVthQGZ2iowAyqR8/tBNQxLE5qbW6mMyWGdWdVhnwEFFSVGSrTNtm6J7GvXfF4oSvJY0q18I8hjbwbO92bWVUXmeVKiiAaryB8RNS4ciiub/ibvxKM4lJ2qNGhQLeSU8+nq61C4wtWfVCEN9cQ4naZh4yZW4oswkuGB//FwfKjBq3xwfd2X9iQzUU0SL5CWvhc4UKRM7cFPYFU7z59Z7eDCeJxFHP5vv/Gojw9A=
-  file: apk/dev-preview.apk
+  file:
+    - dev-preview.apk
   prerelease: true
   skip_cleanup: true
-draft: true
+  draft: true
   on:
     repo: flytrue/dev-apk1
