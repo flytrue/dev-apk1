@@ -8,19 +8,18 @@ before_install:
 - cd source
 - git clone https://github.com/homdx/qt-view
 - cd qt-view
-
 script:
 - docker build -t test .
 - mkdir apk
-- docker run --rm -it --name test -v $TRAVIS_BUILD_DIR/source/qt-view/apk:/app2 -d test
+- docker run --rm -it --name test -v $TRAVIS_BUILD_DIR/source/qt-view/apk:/app2 -d
+  test
 - docker exec -it test cp /app/android-build-debug.apk /app2/dev-preview.apk
 - ls -la apk
 - mv apk/dev-preview.apk $TRAVIS_BUILD_DIR
-
 deploy:
   provider: releases
   api_key:
-    secure: MO5cFUddaIZI0XQa+7JNOWDRC2UcJ2cYgl9yCJ0/Ym2i6XmKU/sYslWrglWxi45VUQT9JLZu8yxzE3MlMLxgjplNIaoXKBG/IKaBqyxdkXUWubO1ffIWJxROsMLkSjsIZ19cuiBwldgMzjAwshwdhQvu4MVcC0kMKajqnngDJhcFAblMQvR3sfDJcYLqT5+q1ykXPCz/MHNPoVk4N4uoiq1OjGgPGvdKEuwd1gBc+1J+pFfu+0IbZ0CT98AjVHo2KCfJtNNQS6ILk/YlYckXVeiWoWVX5mTPGsLWoFOB226tRceoQkI6AvSSuY1KQb6YrZFugbzcFGumdGd6gk/SlGi8kYeY/LJwmRkokKsYfitZKVisCgdlajUbKJFc/DHcdrstleilKFax3Bh5B2BcocnWxIY/kTYMbYnqMqnF8QRR96HQLV4gCvfW3q4w0Bw7aDbshVthQGZ2iowAyqR8/tBNQxLE5qbW6mMyWGdWdVhnwEFFSVGSrTNtm6J7GvXfF4oSvJY0q18I8hjbwbO92bWVUXmeVKiiAaryB8RNS4ciiub/ibvxKM4lJ2qNGhQLeSU8+nq61C4wtWfVCEN9cQ4naZh4yZW4oswkuGB//FwfKjBq3xwfd2X9iQzUU0SL5CWvhc4UKRM7cFPYFU7z59Z7eDCeJxFHP5vv/Gojw9A=
+    secure: FrgQMI2NxMUzwOvSHacS+lYFt4cIsMgRjQzX3+XRHmVfZlNXpBIsJpZeH31NP23mxZGWdBfxLl0StbucLdQmUg9P84H2twBtgIzRbybsUkl8NEi+0jtyDC0PKC9an+dpWZnR+eIbcRw9xEusuOfdv/02m2D2J47moHxajOodS0UUgh0vvY85wUIA7V6MkejV7RMU3nG/m2rEtmxJ4t0nibJQvOC8+ovViSxRyOvExmsdZKj0JYuLfFHICyqxHmbGZ6/qVf3QFYO6KEqhArWIxJZ+zQHr/HfiCLWMvZcjdZn40kxEwEa2O634+fXqchQNMNFiitMKJ88RDRo2PyWesEB2LNSY2HxdtMQpjVLkHNhuz4uxAUmCdD9m38HlhvytKT0+HVOMWdhTcxXYKik7kVFCjNaAtVbry1w9ixvHmBdtY4LjTRdjO5oZJFtHI4q5tKhaE5WVERuT9sPWiOT8KFvqRBRvlh2BYshbXNuBk/d5rWANynwuJnYT3biwlLZmNSHpRsdHfUMHNaqFvS4X6MJ+lvgoNEyMH3xEKrVvQbGYHLbjfM8u4k8fUff2rZ+Rg9yrGcFSXALtSzYhhj/n1oSsIkYBRE0MS9ApcTUe250yQbSkgK/d2pgpNNbmhPqCWxTuFZXzuQ/uIYpSNzHgKKCe3Jnr4qcWmHQR45cMHsg=
   file:
     - dev-preview.apk
   prerelease: true
