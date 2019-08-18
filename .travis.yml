@@ -16,6 +16,7 @@ script:
 - docker exec -it test cp /app/android-build-debug.apk /app2/dev-preview.apk
 - ls -la apk
 - mv apk/dev-preview.apk $TRAVIS_BUILD_DIR
+- cd $TRAVIS_BUILD_DIR
 deploy:
   provider: releases
   api_key:
