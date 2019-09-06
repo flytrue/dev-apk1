@@ -1,10 +1,10 @@
 {
   "qt-view": "test",
   "versions": [
-    {"appver": "0.0.1", "changesTxt": "Version with store phone and pass"},
     {"appver": "0.0.2", "changesTxt": "Update links"},
     {"appver": "0.0.3", "changesTxt": "Test Order list scrool box"},
-    {"appver": "0.0.4", "changesTxt": "Next new gui vers - prov by L"}
+    {"appver": "0.0.4", "changesTxt": "- 2Page GUI editable, - en ru lang, - load QML from url"},
+    {"appver": "0.0.5", "changesTxt": "Not know what is this version is provided)"}
     ],
   "number" : 4
 }
