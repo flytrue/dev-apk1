@@ -3,7 +3,7 @@
   "versions": [
     {"appver": "0.0.2", "changesTxt": "Update links"},
     {"appver": "0.0.3", "changesTxt": "Test Order list scrool box"},
-    {"appver": "0.0.4", "changesTxt": "- 2Page GUI editable, - en ru lang, - load QML from url"},
+    {"appver": "0.0.4", "changesTxt": "- 2Page GUI editable,\n - en ru lang,\n - load QML from url"},
     {"appver": "0.0.5", "changesTxt": "Not know what is this version is provided)"}
     ],
   "number" : 4
