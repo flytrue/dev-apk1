@@ -1,9 +1,9 @@
 {
   "qt-view": "test",
   "versions": [
-    {"appver": "0.0.3", "changesTxt": "Test Order list scrool box", "hashsum" : ""},
-    {"appver": "0.0.4", "changesTxt": "- 2Page GUI editable,\n - en ru lang,\n - load QML from url", "hashsum" : ""},
-    {"appver": "0.0.5", "changesTxt": "Future version not released now", "hashsum" : "0b3af23ea69818b8666cc218b0285964b400172ad6db755cd7b6952baa80de5ecc26df971724131736675c13444262742070a45012c1008a2b434e2a7bcfece6"}
+    {"appver": "0.0.4", "changesTxt": "Test Order list scrool box", "hashsum" : ""},
+    {"appver": "0.0.5", "changesTxt": "- 2Page GUI editable,\n - en ru lang,\n - load QML from url", "hashsum" : ""},
+    {"appver": "0.0.6", "changesTxt": "Future version not released now", "hashsum" : "0b3af23ea69818b8666cc218b0285964b400172ad6db755cd7b6952baa80de5ecc26df971724131736675c13444262742070a45012c1008a2b434e2a7bcfece6"}
     ],
   "number" : 3
 }
