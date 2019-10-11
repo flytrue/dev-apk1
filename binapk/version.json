@@ -3,7 +3,8 @@
   "versions": [
     {"appver": "0.0.4", "changesTxt": "Test Order list scrool box", "hashsum" : ""},
     {"appver": "0.0.5", "changesTxt": "- 2Page GUI editable,\n - en ru lang,\n - load QML from url", "hashsum" : ""},
-    {"appver": "0.0.6", "changesTxt": "Future version not released now", "hashsum" : "0b3af23ea69818b8666cc218b0285964b400172ad6db755cd7b6952baa80de5ecc26df971724131736675c13444262742070a45012c1008a2b434e2a7bcfece6"}
-    ],
-  "number" : 3
+    {"appver": "0.0.6", "changesTxt": "Future version not released now", "hashsum" : "0b3af23ea69818b8666cc218b0285964b400172ad6db755cd7b6952baa80de5ecc26df971724131736675c13444262742070a45012c1008a2b434e2a7bcfece6"},
+    {"appver": "0.0.7", "changesTxt": "Downloader in app", "hashsum" : "71fc1252935b9186ff61e79dec514d9ceff3c1fb1d0b1871da39124b11f829163e043fc37b2b340112b074e09f23b349ce226d8a5f053cb80436110a2486f929"}
+  ],
+  "number" : 4
 }
